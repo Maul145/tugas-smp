@@ -62,6 +62,7 @@ body {
 
 .navbar .navbar-navigasi {
   position: absolute;
+  /* z-index: 1; */
   top: 100%;
   left: 0;
   background-color: gray;
@@ -84,95 +85,298 @@ body {
 }
 
 .navbar .navbar-navigasi a::after {
-    content: '';
-    display: block;
-    padding-bottom: 0.5rem;
-    border-bottom: 0.2rem solid var(--primary);
-    transform: scaleX(0);
-    transform-origin: 0 0;
-    transition: 0.2s linear;
-
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.2rem solid var(--primary);
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: 0.2s linear;
 }
 
 .navbar .navbar-navigasi a:hover:after {
-    transform: scaleX(0.8);
+  transform: scaleX(0.8);
 }
 
 /*  */
 
-
-
 /* navbar selesai */
+
+/* section mulai */
+.konten-tengah {
+  display: flex;
+  margin-top: 7rem;
+  padding-left: 11rem;
+}
+
+.main-content {
+  flex: 1;
+  background-color: #060000;
+  height: calc(120vh - 7rem);
+  right: 0;
+  left: 0px;
+}
+
+.login-sebagai {
+  display: flex;
+  background-image: linear-gradient(90deg, #27608f, #42a5f5);
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#profile {
+  background-image: url(/asset/img/profile.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+#text-info {
+  color: var(--sekunder);
+  font-size: 1.25rem;
+  font-weight: 400;
+  background-color: var(--primary);
+  padding: 0.6rem;
+  border-radius: 1.25rem;
+  transition: 0.2s;
+}
+
+#text-info:hover {
+  color: var(--primary);
+  background-color: var(--sekunder);
+}
+
+#informasi {
+  color: var(--sekunder);
+  font-size: 1.25rem;
+  font-weight: 400;
+  background-color: var(--primary);
+  padding: 0.6rem;
+  border-radius: 1.25rem;
+  transition: 0.2s;
+}
+#informasi:hover {
+  color: var(--primary);
+  background-color: var(--sekunder);
+}
+
+/*  */
+.informasi {
+  background-color: rgb(200, 200, 200);
+  height: calc(100vh - 7rem);
+  margin-top: 1rem;
+  margin-right: 1rem;
+  border-radius: 1.5rem 1.5rem 0rem 0rem;
+  padding: 1rem 0rem;
+}
+
+hr {
+  border: none;
+  height: 0.625rem;
+  background-color: black;
+  margin: 1.125rem auto;
+  max-width: 100%;
+  position: relative;
+  border-radius: 0.625rem;
+}
+.informasi-1 {
+  background-color: #27608f66;
+  left: 0;
+  right: 0;
+  height: 20vh;
+  margin: 0% 0% 1% 0%;
+  padding: 1rem 3.25rem 0rem 3.25rem;
+}
+.informasi-1 p {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+/* ---------- */
+.informasi-2 {
+  background-color: #27608f66;
+  left: 0;
+  right: 0;
+  height: 20vh;
+  margin: 0% 0% 1% 0%;
+  padding-left: 3rem;
+}
+
+.informasi-2 .box-atas {
+  border: 1px solid #060000;
+}
+
+.informasi-2 .box-atas p {
+  font-size: 24px;
+}
+.informasi-2 .box-bawah {
+  border: 1px solid #060000;
+  display: flex;
+  height: 100px;
+}
+
+.informasi-2 .box-bawah .content-box {
+  border: 1px solid #060000;
+  width: 271px;
+  height: 100%;
+  border-radius: 20px 100px 100px 20px;
+}
+.informasi-2 .box-bawah .content-box .content-box-1 {
+  border: 1px solid #060000;
+  display: flex;
+}
+.informasi-2 .box-bawah .content-box .content-box-1 p {
+  font-size: 24px;
+  margin-right: 10%;
+}
+.informasi-2 .box-bawah .content-box .content-box-2 {
+  border: 1px solid #060000;
+  display: flex;
+}
+.informasi-2 .box-bawah .content-box .content-box-2 p {
+  font-size: 48px;
+  margin-right: 10%;
+}
+
+/*  */
+.informasi-3 {
+  background-color: #51b1ff66;
+  left: 0;
+  right: 0;
+  height: auto;
+  display: flex;
+}
+
+.informasi-3 .box-3 {
+  display: block;
+  height: 400px;
+  width: 262px;
+  border: 1px solid #000;
+  border-radius: 30px;
+  margin-right: 3rem;
+}
+
+.informasi-3 .box-3 .box-informasi-1 {
+  border: 1px solid #000;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  display: inline-flex;
+}
+
+.informasi-3 .box-3 .box-informasi-1 #pertama {
+  background-color: #b6895b;
+}
+.informasi-3 .box-3 .box-informasi-1 .content-img {
+  border: 1px solid #000;
+  width: 252px;
+  height: 82px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  background-image: url(/asset/img/profile.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.informasi-3 .box-3 .box-informasi-1 #ketiga {
+  background-color: #b6895b;
+  font-weight: bold;
+  color: black;
+  font-size: 32px;
+}
+.informasi-3 .box-3 .box-informasi-1 #keempat {
+  background-color: #b6895b;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+}
+
+
+/* section selesai */
 
 /* Media Queries */
 
-
 /*----------x---------x---- laptop mulai ----------x---------x----*/
-@media (max-width:1366px) {
-    html {
-        font-size: 75%;
-    }
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
 }
 /*----------x---------x---- laptop selesai ----------x---------x----*/
 
-
-
 /*----------x---------x---- tablet mulai ----------x---------x----*/
-@media (max-width:768px) {
-    html {
-        font-size: 62.5%;
-    }
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
 
-    #menu {
-        display: inline-block;
-        color: #ffffff;
-    }
-    
-    .navbar .navbar-navigasi {
+  #menu {
+    display: inline-block;
+    color: #ffffff;
+  }
 
-        position: absolute;
-        top: 100%;
-        left: auto;
-        /* left: -100%; */
-        right: -100%;
-        background-color: gray;
-        width: 20rem;
-        height: 100vh;
-    }
-     
-    .navbar .navbar-navigasi.active {
-        right: 0;
-    }
-    
+  .navbar .navbar-navigasi {
+    position: absolute;
+    top: 100%;
+    left: auto;
+    /* left: -100%; */
+    right: -100%;
+    background-color: gray;
+    width: 20rem;
+    height: 100vh;
+  }
+
+  .navbar .navbar-navigasi.active {
+    right: 0;
+    display: block;
+  }
+
+  .konten-tengah {
+    padding-left: 0;
+    margin-top: 6.9rem;
+  }
+
+  .login-sebagai {
+    padding: 1rem 9%;
+  }
 }
 /*----------x---------x---- tablet selesai ----------x---------x----*/
 
-
-
 /*----------x---------x---- handphone/mobile mulai ----------x---------x----*/
-@media (max-width:450px) {
-    html {
-        font-size: 55%;
-    }
-    #menu {
-        display: inline-block;
-        color: #ffffff;
-    }
-    
-    .navbar .navbar-navigasi {
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+  #menu {
+    display: inline-block;
+    color: #ffffff;
+  }
 
-        position: absolute;
-        top: 100%;
-        left: auto;
-        /* left: -100%; */
-        right: -100%;
-        background-color: gray;
-        width: 15rem;
-        height: 100vh;
-    }
-     
-    .navbar .navbar-navigasi.active {
-        right: 0;
-    }
+  .navbar .navbar-navigasi {
+    position: absolute;
+    top: 100%;
+    left: auto;
+    /* left: -100%; */
+    right: -100%;
+    background-color: gray;
+    width: 15rem;
+    height: 100vh;
+  }
+
+  .navbar .navbar-navigasi.active {
+    right: 0;
+  }
+
+  .konten-tengah .main-content {
+    left: 0;
+  }
 }
 /*----------x---------x---- handphone/mobile selsai ----------x---------x----*/
