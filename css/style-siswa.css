@@ -136,13 +136,7 @@ body {
   height: 5rem;
   width: 5rem;
   border-radius: 50%;
-  /* transition: 1s; */
 }
-
-/* #profile:hover {
-  transform: scale(4);
-  position: relative;
-} */
 
 #text-info {
   color: var(--sekunder);
@@ -279,8 +273,6 @@ hr {
 
 .informasi-3 .box-3 .box-informasi-1 #pertama {
   background-color: #b6895b;
-  font-size: 28px;
-  font-weight: 400;
 }
 .informasi-3 .box-3 .box-informasi-1 .content-img {
   border: 1px solid #000;
