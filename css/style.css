@@ -228,7 +228,7 @@ hr {
   font-size: 24px;
 }
 .informasi-2 .box-bawah {
-  border: 1px solid #060000;
+  /* border: 1px solid #060000; */
   display: flex;
   height: 100px;
 }
@@ -288,10 +288,11 @@ hr {
   border: 1px solid #000;
   border-radius: 30px;
   margin-right: 3rem;
+  background-color: #1f53ff;
 }
 
 .informasi-3 .box-3 .box-informasi-1 {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   width: 100%;
   height: auto;
   justify-content: center;
@@ -305,7 +306,7 @@ hr {
   color: #000;
 }
 .informasi-3 .box-3 .box-informasi-1 .content-img {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   width: 252px;
   height: 82px;
   display: flex;
@@ -317,14 +318,15 @@ hr {
   background-position: 50% 50%;
 }
 .informasi-3 .box-3 .box-informasi-1 #ketiga {
-  background-color: #b6895b;
-  font-weight: bold;
+  /* background-color: #b6895b; */
+  font-weight: 500;
   color: black;
-  font-size: 32px;
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 .informasi-3 .box-3 .box-informasi-1 #keempat {
-  background-color: #b6895b;
-  font-weight: bold;
+  /* background-color: #b6895b; */
+  font-weight: 400;
   color: black;
   font-size: 20px;
 }
