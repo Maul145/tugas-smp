@@ -1,5 +1,6 @@
 :root {
-  --primary: #b6895b;
+  --primary: #1f53ff;
+  --primary-2 : #FFD600;
   --bg: #010101;
   --sekunder: #ffffff;
 }
@@ -111,7 +112,7 @@ body {
 
 .main-content {
   flex: 1;
-  background-color: #060000;
+  /* background-color: #060000; */
   height: calc(120vh - 7rem);
   right: 0;
   left: 0px;
@@ -175,7 +176,7 @@ body {
 
 /*  */
 .informasi {
-  background-color: rgb(200, 200, 200);
+  background-color: rgba(255, 255, 255, 0);
   height: calc(100vh - 7rem);
   margin-top: 1rem;
   margin-right: 1rem;
@@ -193,7 +194,7 @@ hr {
   border-radius: 0.625rem;
 }
 .informasi-1 {
-  background-color: #27608f66;
+  /* background-color: #27608f66; */
   left: 0;
   right: 0;
   height: 20vh;
@@ -207,16 +208,20 @@ hr {
 }
 /* ---------- */
 .informasi-2 {
-  background-color: #27608f66;
+  background-image: linear-gradient(#3B19C6, #0A22FF);
   left: 0;
   right: 0;
-  height: 20vh;
+  height: auto;
   margin: 0% 0% 1% 0%;
   padding-left: 3rem;
+  padding-bottom: 10px;
+  border-radius: 20px;
 }
 
 .informasi-2 .box-atas {
-  border: 1px solid #060000;
+  /* border: 1px solid #060000; */
+  font-weight: 400;
+  
 }
 
 .informasi-2 .box-atas p {
@@ -229,13 +234,16 @@ hr {
 }
 
 .informasi-2 .box-bawah .content-box {
-  border: 1px solid #060000;
+  /* border: 1px solid #060000; */
+  background-color: #ffffff;
+  color: var(--primary);
   width: 271px;
   height: 100%;
-  border-radius: 20px 100px 100px 20px;
+  border-radius: 20px 20px 20px 20px;
+  margin-right: 1rem;
 }
 .informasi-2 .box-bawah .content-box .content-box-1 {
-  border: 1px solid #060000;
+  /* border: 1px solid #060000; */
   display: flex;
 }
 .informasi-2 .box-bawah .content-box .content-box-1 p {
@@ -243,12 +251,25 @@ hr {
   margin-right: 10%;
 }
 .informasi-2 .box-bawah .content-box .content-box-2 {
-  border: 1px solid #060000;
+  /* border: 1px solid #060000; */
   display: flex;
+  text-align: center;
+  justify-content: center;
 }
 .informasi-2 .box-bawah .content-box .content-box-2 p {
   font-size: 48px;
   margin-right: 10%;
+  font-weight: 600;
+}
+.informasi-2 .box-bawah .content-box .content-box-2-1 {
+  /* border: 1px solid #060000; */
+  display: flex;
+  text-align: center;
+}
+.informasi-2 .box-bawah .content-box .content-box-2-1 p {
+  font-size: 48px;
+  margin-right: 10%;
+  font-weight: 600;
 }
 
 /*  */
@@ -278,9 +299,10 @@ hr {
 }
 
 .informasi-3 .box-3 .box-informasi-1 #pertama {
-  background-color: #b6895b;
+  /* background-color: #b6895b; */
   font-size: 28px;
-  font-weight: 400;
+  font-weight: 500;
+  color: #000;
 }
 .informasi-3 .box-3 .box-informasi-1 .content-img {
   border: 1px solid #000;
