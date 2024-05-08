@@ -1,0 +1,246 @@
+:root {
+  --primary: #003aff;
+  --bg: #010101;
+  --sekunder: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--sekunder);
+  color: #ffffff;
+  transition: 1s;
+  /* min-height: 2000px; */
+}
+
+/* box utama */
+.main-box {
+  /* border: 1px solid #000000; */
+  width: 931.15px;
+  height: 466px;
+  margin: auto;
+  margin-top: 90px;
+  display: flex;
+}
+
+.main-box .left {
+  border: 1px solid #000000;
+  border-right: 1px solid #00000000;
+  border-radius: 3% 0 0 3% ;
+  color: #000000;
+  width: 465.58px;
+  height: 100%;
+}
+
+/*  */
+.main-box .left .satu {
+  /* border: 1px solid #000000; */
+  width: 100%;
+  height: 54.77px;
+  background-color: rgba(0, 0, 0, 10%);
+  display: flex;
+  justify-content: center;
+  line-height: 54.77px;
+}
+
+.main-box .left .satu p {
+  margin-bottom: 100px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/*  */
+.main-box .left .dua {
+  /* border: 1px solid #000000; */
+  width: 100%;
+  height: 123.89px;
+  padding-left: 23.47px;
+  padding-top: 19.56px;
+}
+.main-box .left .dua p {
+  font-size: 20px;
+}
+.main-box .left .dua input {
+  border: 3px solid gray;
+  border-radius: 5px;
+  width: 419.93px;
+  height: 49.56px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.main-box .left .dua input:hover {
+  font-size: 20px;
+}
+
+/*  */
+.main-box .left .tiga {
+  /* border: 1px solid #000000; */
+  width: 100%;
+  height: 123.89px;
+  padding-left: 23.47px;
+  padding-top: 19.56px;
+}
+.main-box .left .tiga p {
+  font-size: 20px;
+}
+
+.main-box .left .tiga input {
+  /* border: 1px solid #000000; */
+  width: 419.93px;
+  height: 49.56px;
+  border: 3px solid gray;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.main-box .left .tiga input:hover {
+  font-size: 20px;
+}
+
+/*  */
+.main-box .left .empat {
+  /* background-color: rgba(0, 0, 255, 0.627); */
+  /* border: 1px solid #000000; */
+  width: 100%;
+  height: 161px;
+  padding-left: 49.56px;
+  padding-right: 1rem;
+}
+.main-box .left .empat .box-empat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 1%;
+  margin-bottom: 3rem;
+}
+.main-box .left .box-empat p {
+  color: #000000;
+  font-size: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-box .left .box-empat a {
+  color: var(--primary);
+  font-size: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+#ceklis {
+  border-radius: 5px;
+  background-color: var(--primary);
+  border-radius: 1px solid #000;
+  color: var(--sekunder);
+  margin-right: 5px;
+}
+
+.main-box .left .empat #button  {
+  color: var(--sekunder);
+  padding: 9px;
+  font-size: 20px;
+  background-color: var(--primary);
+  border-radius: 4px;
+}
+
+/*  */
+
+.main-box .right {
+  /* border: 1px solid #000000; */
+  background-color: var(--primary);
+  width: 465.58px;
+  height: 100%;
+  display: block;
+  border-radius: 0 3% 3% 0;
+}
+
+.main-box .right .box-atas {
+  display: flex;
+  justify-content: center;
+  padding-top: 37.82px;
+  padding-bottom: 11px;
+  border-radius: 1px solid #000;
+  /* background-color: #003aff; */
+}
+
+.main-box .right .box-atas .atas {
+  width: 168.23px;
+  height: 151.69px;
+  /* border: 1px solid #000; */
+  background-image: url(/asset/img/logo-sekolah.png);
+  background-size: cover;
+}
+
+.main-box .right .box-bawah {
+  color: #ffffff;
+  /* border: 1px solid #000; */
+  /* background-color: #003aff; */
+  width: 100%;
+}
+
+.main-box .right .box-bawah h1 {
+  font-size: 52px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+  line-height: 75px;
+}
+.main-box .right .box-bawah p {
+  line-height: 20px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Media Queries */
+
+/*----------x---------x---- laptop mulai ----------x---------x----*/
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+    transition: 1s;
+  }
+}
+/*----------x---------x---- laptop selesai ----------x---------x----*/
+
+/*----------x---------x---- tablet mulai ----------x---------x----*/
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+    transition: 1s;
+  }
+
+
+  .main-box .left {
+    margin: auto;
+    border-radius: 3% 3% 3% 3%; /* Menyesuaikan border-radius */
+    border: 1px solid #000;
+  }
+
+  .main-box .right {
+    display: none;
+  }
+}
+/*----------x---------x---- tablet selesai ----------x---------x----*/
+
+/*----------x---------x---- handphone/mobile mulai ----------x---------x----*/
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
+/*----------x---------x---- handphone/mobile selsai ----------x---------x----*/
