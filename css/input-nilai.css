@@ -110,14 +110,107 @@ body {
 
 .main-content {
   flex: 1;
-  background-color: #060000;
+  background-color: #cfcfcf;
   height: calc(120vh - 7rem);
   right: 0;
   left: 0px;
 }
+
+.main-content .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.2em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #444;
+}
+
+.main-content .container h1 {
+  font-weight: normal;
+  letter-spacing: -1px;
+  color: #42a5f5;
+}
+
+.main-content .container .data-table {
+  margin: 1em 0;
+  min-width: 300px;
+  background-color: #34495e;
+  color: #fff;
+  overflow: hidden;
+  border-radius: 9px;
+}
+
+.main-content .container .data-table tr {
+  border-top: 1px solid #edd;
+  border-bottom: 1px solid #edd;
+  border-color: #42a5f5;
+}
+
+.main-content .container .data-table th, td {
+  text-align: left;
+  margin: .5em 1em;
+}
+
+.main-content .container .data-table th {
+  display: none;
+}
+
+.main-content .container .data-table td {
+  display: block;
+}
+
+.main-content .container .data-table td:first-child {
+  padding-top: .5em;
+}
+.main-content .container .data-table td:last-child {
+padding-bottom: .5em;
+}
+
+.main-content .container .data-table td::before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 6.5em;
+  display: inline-block;
+}
+
+.main-content .container .data-table th,
+.main-content .container .data-table td::before {
+  color: #dd5;
+
+}
+
+#action a {
+  color: #fff;
+}
+
 /*  */
 
 /* Media Queries */
+
+@media (min-width: 600px) {
+  .main-content .container .data-table td::before {
+    display: none;
+  }
+
+  .main-content .container .data-table td,
+  .main-content .container .data-table th {
+    display: table-cell;
+    padding: .25em .5em;
+    padding: 1em !important;
+  }
+
+  .main-content .container .data-table th:first-child,
+  .main-content .container .data-table td:first-child {
+    padding-left: 0;
+  }
+
+  .main-content .container .data-table th:last-child,
+  .main-content .container .data-table td:last-child {
+    padding-right: 0;
+  }
+}
 
 /*----------x---------x---- laptop mulai ----------x---------x----*/
 @media (max-width: 1366px) {
