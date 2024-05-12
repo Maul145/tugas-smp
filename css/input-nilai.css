@@ -129,6 +129,7 @@ body {
 
 .main-content .container h1 {
   font-weight: normal;
+  font-size: 24px;
   letter-spacing: -1px;
   color: #42a5f5;
 }
@@ -136,8 +137,8 @@ body {
 .main-content .container .data-table {
   margin: 1em 0;
   min-width: 300px;
-  background-color: #34495e;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   overflow: hidden;
   border-radius: 9px;
 }
@@ -178,11 +179,13 @@ padding-bottom: .5em;
 .main-content .container .data-table th,
 .main-content .container .data-table td::before {
   color: #dd5;
+  background-color: #27608f;
+  border: 1px solid #00000000;
 
 }
 
 #action a {
-  color: #fff;
+  color: #000000;
 }
 
 /*  */
